@@ -13,6 +13,7 @@
     <artifactId>kafka-rest-parent</artifactId>
     <packaging>pom</packaging>
     <name>kafka-rest-parent</name>
+    <version>6.0.0-0</version>
     <organization>
         <name>Confluent, Inc.</name>
         <url>http://confluent.io</url>
