@@ -2,4 +2,5 @@
 common {
   slackChannel = ''
   upstreamProjects = 'confluentinc/schema-registry'
+  testbreakReporting = false
 }
