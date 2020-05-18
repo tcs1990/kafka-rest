@@ -27,7 +27,7 @@
         <dependency>
             <groupId>io.confluent</groupId>
             <artifactId>kafka-rest-common</artifactId>
-            <version>${project.version}</version>
+            <version>${io.confluent.kafka-rest.version}</version>
             <scope>compile</scope>
         </dependency>
         <dependency>

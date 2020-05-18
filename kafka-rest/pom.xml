@@ -23,16 +23,17 @@
         <dependency>
             <groupId>io.confluent</groupId>
             <artifactId>rest-utils</artifactId>
+            <version>${io.confluent.rest-utils.version}</version>
         </dependency>
         <dependency>
             <groupId>io.confluent</groupId>
             <artifactId>kafka-rest-common</artifactId>
-            <version>${project.version}</version>
+            <version>${io.confluent.kafka-rest.version}</version>
         </dependency>
         <dependency>
             <groupId>io.confluent</groupId>
             <artifactId>kafka-rest-scala-consumer</artifactId>
-            <version>${project.version}</version>
+            <version>${io.confluent.kafka-rest.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.kafka</groupId>
