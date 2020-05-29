@@ -1,15 +1,10 @@
 package io.confluent.kafkarest.integration.v3;
 
-import static java.util.Collections.singletonList;
 import static org.junit.Assert.assertEquals;
 
 import io.confluent.kafkarest.Versions;
-import io.confluent.kafkarest.entities.Reassignment;
-import io.confluent.kafkarest.entities.v3.CollectionLink;
 import io.confluent.kafkarest.entities.v3.ListReassignmentsResponse;
 import io.confluent.kafkarest.entities.v3.ReassignmentData;
-import io.confluent.kafkarest.entities.v3.Relationship;
-import io.confluent.kafkarest.entities.v3.ResourceLink;
 import io.confluent.kafkarest.integration.ClusterTestHarness;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -51,6 +46,7 @@ public class ListAllReassignmentsActionIntegrationTest extends ClusterTestHarnes
         + "/-/reassignments")
         .accept(Versions.JSON_API)
         .get();
+
     assertEquals(Status.OK.getStatusCode(), response.getStatus());
 
     List<ReassignmentData> actualReassignments =
