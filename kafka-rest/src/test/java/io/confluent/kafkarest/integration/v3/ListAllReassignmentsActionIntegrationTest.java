@@ -58,7 +58,7 @@ public class ListAllReassignmentsActionIntegrationTest extends ClusterTestHarnes
     }
   }
 
-  private Map<Integer, List<Integer>> createAssignment(List<Integer> replicaIds) {
+  static Map<Integer, List<Integer>> createAssignment(List<Integer> replicaIds) {
     Map<Integer, List<Integer>> replicaAssignments = new HashMap<>();
     for (int i = 0; i < 100; i++) {
       replicaAssignments.put(i, replicaIds);
@@ -66,7 +66,7 @@ public class ListAllReassignmentsActionIntegrationTest extends ClusterTestHarnes
     return replicaAssignments;
   }
 
-  private Map<TopicPartition, Optional<NewPartitionReassignment>> createReassignment(
+  static Map<TopicPartition, Optional<NewPartitionReassignment>> createReassignment(
       List<Integer> replicaIds) {
     Map<TopicPartition, Optional<NewPartitionReassignment>> reassignmentMap = new HashMap<>();
     for (int i = 0; i < 100; i++) {
